@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "source_sha256": "6f9588de10a0a8a1f2d1356468f2d21e62ab20b141f316d882fc9b4aa3f29938",
+  "source_path": "data/insurance-source.csv",
+  "source_notice": "Original repository dataset; upstream annotation/collection provenance is not independently established.",
+  "original_rows": 1338,
+  "valid_target_rows": 1338,
+  "out_of_range_values_imputed": {},
+  "selected_model": "random_forest",
+  "kind": "regression",
+  "threshold": 0.5,
+  "split": {
+    "train": 802,
+    "validation": 269,
+    "test": 267
+  },
+  "split_method": "GroupShuffleSplit; identical selected profiles share a group",
+  "validation_candidates": {
+    "linear": {
+      "rows": 269,
+      "mae": 4355.516951711671,
+      "rmse": 6196.636602540357,
+      "r2": 0.7234397605193748
+    },
+    "random_forest": {
+      "rows": 269,
+      "mae": 2767.5834612389526,
+      "rmse": 4888.367346595272,
+      "r2": 0.8278902968818267
+    }
+  },
+  "test": {
+    "rows": 267,
+    "mae": 2336.7955904481296,
+    "rmse": 4143.452203171992,
+    "r2": 0.8952009276977057
+  },
+  "test_baseline": {
+    "rows": 267,
+    "mae": 9572.002973792112,
+    "rmse": 12799.916760298709,
+    "r2": -0.0001083705354334441
+  },
+  "training_only_preprocessing": true,
+  "sklearn_version": "1.6.1",
+  "artifact_sha256": "013e4aee7b0951257b05b9fd54996f45d425149065eb999a49c4502298e6e95c"
+}
