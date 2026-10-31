@@ -1,0 +1,14 @@
+{
+  "old": "Insurance_Premium_Predictor_WebApp",
+  "name": "insurance-scenario-lab",
+  "title": "Insurance Scenario Lab",
+  "kind": "regression",
+  "target": "expenses",
+  "unit": "source expense units",
+  "color": "#615ba6",
+  "scenario": true,
+  "intro": "Compare two feature profiles using the same historical expense model.",
+  "limitations": "This app shares the source dataset and frozen model design with Insurance Cost Explorer. Scenario differences are predictive associations, not causal effects or current premium quotes.",
+  "positiveLabel": "1",
+  "negativeLabel": "0"
+}
